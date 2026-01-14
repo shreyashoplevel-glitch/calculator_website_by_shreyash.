@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Calculator (basic operations)</h1>
+
+<div id="calculator">
+    <input id="display" type="text" readonly>
+
+    <div id="buttons">
+        <button onclick="clearDisplay()" class="operator-btn">C</button>
+
+        <button onclick="displaytoscreen('7')">7</button>
+        <button onclick="displaytoscreen('8')">8</button>
+        <button onclick="displaytoscreen('9')">9</button>
+        <button onclick="displaytoscreen('*')" class="operator-btn">*</button>
+
+        <button onclick="displaytoscreen('4')">4</button>
+        <button onclick="displaytoscreen('5')">5</button>
+        <button onclick="displaytoscreen('6')">6</button>
+        <button onclick="displaytoscreen('-')" class="operator-btn">-</button>
+
+        <button onclick="displaytoscreen('1')">1</button>
+        <button onclick="displaytoscreen('2')">2</button>
+        <button onclick="displaytoscreen('3')">3</button>
+        <button onclick="displaytoscreen('+')" class="operator-btn">+</button>
+
+        <button onclick="displaytoscreen('0')">0</button>
+        <button onclick="displaytoscreen('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+        <button onclick="displaytoscreen('/')" class="operator-btn">/</button>
+        <button onclick="delete_backspace('backspace')" class="operator-btn"><-</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

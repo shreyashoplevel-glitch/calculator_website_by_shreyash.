@@ -67,7 +67,7 @@ function calculate() {
 function delete_backspace(){
     if(secondNumber == ''){
         display.value = firstNumber;
-        if(firstNumber != ''){
+        if(firstNumber != '' && operator != ''){
             display.value = "";
         }
     }
@@ -77,3 +77,4 @@ function delete_backspace(){
     
     
 }
+
